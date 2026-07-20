@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #e5d1d6; /* Dış arka planı zarif bir soft gül kurusu yaptık */
+    background-color: #e5d1d6; 
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@ body {
     width: 100%;
     max-width: 420px;
     height: 92vh;
-    background: #fcf0f2; /* İç kartı tam aradığın o tatlı pudra pembesi tonuna getirdik */
+    background: #fcf0f2; 
     box-shadow: 0 25px 50px rgba(0,0,0,0.2);
     border-radius: 20px;
     overflow-y: auto;
@@ -43,7 +43,7 @@ body {
     top: 0;
     width: 50%;
     height: 100%;
-    background-color: #f7e4e7; /* Zarfın dış kapakları da uyumlu pudra pembesi */
+    background-color: #f7e4e7; 
     box-shadow: inset 0 0 25px rgba(0,0,0,0.08);
     transition: transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
 }
@@ -68,14 +68,14 @@ body {
     transform: translate(-50%, -50%) scale(1);
     width: 80px;
     height: 80px;
-    background: #d4b2b9; /* Mühür rengini pudraya uyumlu koyu gül tonu yaptık */
+    background: #cc99a3; /* Mühür rengini de çizgilere uyumlu olarak biraz koyulaştırdık */
     border-radius: 50%;
     box-shadow: 0 6px 15px rgba(0,0,0,0.15), inset 0 0 10px rgba(0,0,0,0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 32px;
-    color: #593e43; /* Ortadaki kalp çok net okunsun diye koyu ton */
+    color: #4a2830; 
     z-index: 11;
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
@@ -87,7 +87,7 @@ body {
     font-size: 14px;
     letter-spacing: 1.5px;
     white-space: nowrap;
-    color: #593e43; /* Pudra üzerinde en net okunan koyu mürdüm kahvesi */
+    color: #4a2830; /* Yazıyı tam netleştirdik */
     font-weight: 800;
     text-transform: uppercase;
     animation: pulse 2s infinite;
@@ -109,12 +109,12 @@ body {
 .invitation-content {
     padding: 25px;
     min-height: 100%;
-    color: #2b1f21; /* Yazıları maksimum okunabilirlik için çok koyu mürdüm/siyah yaptık */
+    color: #111111; /* Okunabilirliği maksimuma çıkarmak için düz metinleri tam net siyah yaptık */
     text-align: center;
 }
 
 .inner-frame {
-    border: 3px solid #e0c3c8; /* İç çerçeve pudra tonlarında belirginleştirildi */
+    border: 3px solid #b56c7b; /* Ana çerçeveyi daha belirgin KOYU PEMBE yaptık */
     padding: 30px 15px;
     border-radius: 15px;
     min-height: 100%;
@@ -125,7 +125,7 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #6e4d53;
+    color: #8c4352; /* Marka yazısı koyu pembe */
 }
 
 .section { padding: 35px 0; }
@@ -133,9 +133,9 @@ body {
 /* İsimler Bölümü */
 .names-section .main-title {
     font-family: 'Playfair Display', serif;
-    font-size: 50px; /* İsimler iyice büyük ve net */
+    font-size: 50px; 
     font-weight: 700;
-    color: #593e43; /* Pudra pembesine en çok yakışan asil koyu ton */
+    color: #4a2830; /* İsimleri çok keskin ve asil bir koyu mürdüm/pembe tonu yaptık */
 }
 
 .ampersand {
@@ -144,13 +144,14 @@ body {
     font-size: 38px;
     margin: 8px 0;
     display: block;
-    color: #6e4d53;
+    color: #8c4352;
 }
 
+/* Bölüm Çizgileri */
 .divider {
     border: 0;
-    height: 2px;
-    background: #e0c3c8;
+    height: 2.5px; /* Çizgiyi hafifçe kalınlaştırdık */
+    background: #b56c7b; /* İstediğin net KOYU PEMBE tonu */
     margin: 15px auto;
     width: 75%;
 }
@@ -158,11 +159,11 @@ body {
 /* Davet Mesajı ve Aileler */
 .message-section .message {
     font-size: 16px;
-    font-weight: 600; /* Net okunması için kalınlaştırıldı */
+    font-weight: 600; 
     letter-spacing: 0.5px;
     line-height: 1.8;
     margin-bottom: 30px;
-    color: #1a1314;
+    color: #000000; /* Davet metni tam net siyah */
 }
 
 .families {
@@ -172,11 +173,11 @@ body {
     line-height: 1.7;
     letter-spacing: 0.5px;
     padding: 0 5px;
-    color: #1a1314;
+    color: #000000;
 }
 
 .families strong {
-    color: #593e43;
+    color: #4a2830; /* Aile soyadları koyu pembe-kahve */
     font-size: 15px;
     display: block;
     margin-bottom: 4px;
@@ -188,24 +189,24 @@ body {
     letter-spacing: 2px;
     margin-bottom: 20px;
     font-weight: 700;
-    color: #593e43;
+    color: #4a2830;
 }
 
 .date-badge {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff9fa; /* Tarih arkasına kontrast zemin */
+    background: #fff9fa; 
     padding: 15px;
     border-radius: 10px;
-    border: 2px solid #e0c3c8;
+    border: 2px solid #b56c7b; /* Tarih kutusu çerçevesi koyu pembe */
 }
 
 .date-badge .day {
     font-family: 'Playfair Display', serif;
     font-size: 56px;
     font-weight: 700;
-    color: #593e43;
+    color: #4a2830;
 }
 
 .date-badge .month { 
@@ -213,7 +214,7 @@ body {
     font-weight: 700;
     letter-spacing: 3px; 
     margin-top: -5px; 
-    color: #1a1314;
+    color: #000000;
 }
 
 .date-badge .day-name, .date-badge .time { 
@@ -221,14 +222,14 @@ body {
     font-weight: 700;
     letter-spacing: 1px; 
     margin-top: 5px; 
-    color: #593e43;
+    color: #4a2830;
 }
 
 /* Harita ve Adres Alanı */
 .map-placeholder {
     width: 110px;
     height: 110px;
-    border: 2px solid #593e43;
+    border: 2px solid #b56c7b; /* Harita halkası koyu pembe */
     border-radius: 50%;
     margin: 0 auto 15px;
     display: flex;
@@ -242,7 +243,7 @@ body {
     font-size: 15px;
     font-weight: 600;
     line-height: 1.7; 
-    color: #1a1314;
+    color: #000000;
 }
 
 /* Geri Sayım Kutuları */
@@ -257,7 +258,7 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 36px;
     font-weight: 700;
-    color: #593e43;
+    color: #4a2830;
 }
 
 .time-box p { 
@@ -265,15 +266,15 @@ body {
     font-weight: 700;
     letter-spacing: 1px; 
     margin-top: 2px; 
-    color: #1a1314;
+    color: #000000;
 }
 
 .quote { 
     font-size: 14px; 
     font-style: italic;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 20px; 
-    color: #473336;
+    color: #4a2830;
 }
 
 @keyframes bounce {

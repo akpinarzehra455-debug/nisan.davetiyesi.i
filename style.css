@@ -207,3 +207,23 @@ body {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
 }
+
+/* Mühür Altındaki Tıklama İbaresi */
+.click-hint {
+    position: absolute;
+    bottom: -30px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    color: #9c8259;
+    font-weight: 600;
+    text-transform: uppercase;
+    animation: pulse 2s infinite;
+}
+
+/* Hafifçe büyüyüp küçülme efekti */
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.08); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.6; }
+}

@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e6dfd5;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.card-container {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    height: 92vh;
+    background: #fbf9f4;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    border-radius: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Zarf Kapakları */
+.envelope {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    cursor: pointer;
+    transition: visibility 0s 1.2s;
+}
+
+.left-flap, .right-flap {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #f4eee3;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.05);
+    transition: transform 1.2s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.left-flap {
+    left: 0;
+    border-right: 1px solid rgba(0,0,0,0.05);
+    transform-origin: left center;
+}
+
+.right-flap {
+    right: 0;
+    border-left: 1px solid rgba(0,0,0,0.05);
+    transform-origin: right center;
+}
+
+/* Balmumu Mühür */
+.wax-seal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 70px;
+    height: 70px;
+    background: #eddcc4;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15), inset 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #b59a73;
+    z-index: 11;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Açılma Tetikleyicileri */
+.envelope.open .left-flap { transform: rotateY(-120deg); }
+.envelope.open .right-flap { transform: rotateY(120deg); }
+.envelope.open .wax-seal { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+.envelope.open { visibility: hidden; }
+
+/* İç İçerik */
+.invitation-content {
+    padding: 25px;
+    min-height: 100%;
+    color: #6b5e4c;
+    text-align: center;
+}
+
+.inner-frame {
+    border: 1px solid #ebdcc5;
+    padding: 30px 15px;
+    border-radius: 15px;
+    min-height: 100%;
+    background: #fbf9f4;
+}
+
+.brand {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.section { padding: 40px 0; }
+
+.names-section .main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 400;
+    color: #9c8259;
+}
+
+.ampersand {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 28px;
+    margin: 10px 0;
+    display: block;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: radial-gradient(circle, #b59a73 0%, rgba(0,0,0,0) 70%);
+    margin: 10px auto;
+    width: 60%;
+}
+
+.message-section .message {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.families {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    padding: 0 5px;
+}
+
+.date-section h2, .location-section h2, .countdown-section h2 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.date-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-badge .day {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color: #9c8259;
+}
+
+.date-badge .month { font-size: 14px; letter-spacing: 3px; margin-top: -5px; }
+.date-badge .day-name, .date-badge .time { font-size: 12px; letter-spacing: 1px; margin-top: 5px; }
+
+.map-placeholder {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #eddcc4;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fdfcf9;
+}
+
+.pin { font-size: 32px; animation: bounce 2s infinite; }
+.address { font-size: 12px; line-height: 1.6; }
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.time-box span {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #9c8259;
+}
+
+.time-box p { font-size: 9px; letter-spacing: 1px; margin-top: 2px; }
+.quote { font-size: 12px; opacity: 0.8; margin-top: 20px; }
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}

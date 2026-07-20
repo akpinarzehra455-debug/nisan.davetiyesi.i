@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zehra & Asım Nişan Davetiyesi</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Şık Yazı Tipleri -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- WhatsApp'ta Şık Görünmesi İçin Gerekli Kodlar -->
+    <meta property="og:title" content="Zehra & Asım Nişan Davetiyesi" />
+    <meta property="og:description" content="2 Ağustos 2026 Pazar günü gerçekleşecek nişan törenimizde sizleri de aramızda görmekten mutluluk duyarız." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="kapak.jpg" /> 
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+</head>
+<body>
+
+    <div class="card-container">
+        
+        <!-- DIŞ ZARF (MÜHÜRLÜ KAPAKLAR) -->
+        <div class="envelope" id="envelope" onclick="openEnvelope()">
+            <div class="left-flap"></div>
+            <div class="right-flap"></div>
+            <div class="wax-seal">
+                <span>❤</span>
+            </div>
+        </div>
+
+        <!-- İÇ DAVETİYE İÇERİĞİ -->
+        <div class="invitation-content">
+            <div class="inner-frame">
+                <span class="brand">Nişan Davetiyesi</span>
+                
+                <!-- 1. Bölüm: İsimler -->
+                <section class="section names-section">
+                    <h1 class="main-title">Zehra</h1>
+                    <span class="ampersand">&</span>
+                    <h1 class="main-title">Asım</h1>
+                </section>
+
+                <hr class="divider">
+
+                <!-- 2. Bölüm: Davet Metni ve Aileler -->
+                <section class="section message-section">
+                    <p class="message">BU ÖZEL NİŞAN GÜNÜMÜZDE SİZLERİ ARAMIZDA GÖRMEKTEN MUTLULUK DUYARIZ.</p>
+                    <div class="families">
+                        <div>
+                            <strong>AKPINAR AİLESİ</strong><br>
+                            Binnaz & Harun Akpınar
+                        </div>
+                        <div>
+                            <strong>BEŞİROĞLU AİLESİ</strong><br>
+                            Gülüşan & Yılmaz Beşiroğlu
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="divider">
+
+                <!-- 3. Bölüm: Tarih ve Saat -->
+                <section class="section date-section">
+                    <h2>TARİH & SAAT</h2>
+                    <div class="date-badge">
+                        <span class="day">02</span>
+                        <span class="month">AĞUSTOS 2026</span>
+                        <span class="day-name">PAZAR</span>
+                        <span class="time">19:00</span>
+                    </div>
+                </section>
+
+                <hr class="divider">
+
+                <!-- 4. Bölüm: Yol Tarifi -->
+                <section class="section location-section">
+                    <h2>YOL TARİFİ</h2>
+                    <div class="map-placeholder">
+                        <div class="pin">📍</div>
+                    </div>
+                    <p class="address">
+                        <strong>Yolcu Davet Evi</strong><br>
+                        Mimar Sinan, Halit Paşa Cd. 80/A<br>
+                        Merkez / Erzincan
+                    </p>
+                </section>
+
+                <hr class="divider">
+
+                <!-- 5. Bölüm: Geri Sayım -->
+                <section class="section countdown-section">
+                    <h2>GERİ SAYIM</h2>
+                    <div id="countdown">
+                        <div class="time-box"><span id="days">00</span><p>GÜN</p></div>
+                        <div class="time-box"><span id="hours">00</span><p>SAAT</p></div>
+                        <div class="time-box"><span id="minutes">00</span><p>DAKİKA</p></div>
+                        <div class="time-box"><span id="seconds">00</span><p>SANİYE</p></div>
+                    </div>
+                    <p class="quote"><i>"İki ruh, bir deniz kadar derin bir aşkla birleşiyor."</i></p>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
